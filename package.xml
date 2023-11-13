@@ -1,0 +1,31 @@
+<package format="3">
+  <name>turtlebot3_nav_package</name>
+  <version>0.0.1</version>
+  <description>TurtleBot3 Navigation and Mapping Package</description>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>nav2_bringup</depend>
+  <depend>nav2_core</depend>
+  <depend>nav2_common</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_planner</depend>
+  <depend>nav2_recoveries</depend>
+  <depend>nav2_util</depend>
+  <depend>nav2_voxel_grid</depend>
+  <depend>navigation2</depend>
+  <depend>slam_toolbox</depend>
+  <depend>turtlebot3</depend>
+  <depend>turtlebot3_msgs</depend>
+  <depend>turtlebot3_navigation</depend>
+  <depend>turtlebot3_simulations</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

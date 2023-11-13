@@ -1,0 +1,10 @@
+# Exemplo de parâmetros para o SLAM Toolbox
+slam_toolbox:
+  ros__parameters:
+    map_frame: "map"
+    odom_frame: "odom"
+    scan_topic: "scan"
+    use_sim_time: True
+    resolution: 0.05
+    # Outros parâmetros relevantes...
+
