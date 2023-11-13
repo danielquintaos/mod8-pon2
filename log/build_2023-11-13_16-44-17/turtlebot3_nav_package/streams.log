@@ -1,0 +1,38 @@
+[0.094s] Invoking command in '/home/hegel/Documents/GitHub/mod8-pon2/build/turtlebot3_nav_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com _=/usr/bin/env /usr/bin/cmake /home/hegel/Documents/GitHub/mod8-pon2 -DCMAKE_INSTALL_PREFIX=/home/hegel/Documents/GitHub/mod8-pon2/install/turtlebot3_nav_package
+[0.452s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.661s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.724s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.815s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.822s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.843s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.872s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.906s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.041s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.047s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.124s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.384s] -- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[1.387s] -- Found nav2_bringup: 1.1.12 (/opt/ros/humble/share/nav2_bringup/cmake)
+[1.390s] -- Found nav2_core: 1.1.12 (/opt/ros/humble/share/nav2_core/cmake)
+[2.733s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.695s] -- Found nav2_common: 1.1.12 (/opt/ros/humble/share/nav2_common/cmake)
+[4.698s] -- Found nav2_planner: 1.1.12 (/opt/ros/humble/share/nav2_planner/cmake)
+[7.278s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[7.278s]   By not providing "Findnav2_recoveries.cmake" in CMAKE_MODULE_PATH this
+[7.279s]   project has asked CMake to find a package configuration file provided by
+[7.279s]   "nav2_recoveries", but CMake did not find one.
+[7.279s] 
+[7.279s]   Could not find a package configuration file provided by "nav2_recoveries"
+[7.279s]   with any of the following names:
+[7.279s] 
+[7.279s]     nav2_recoveriesConfig.cmake
+[7.279s]     nav2_recoveries-config.cmake
+[7.279s] 
+[7.279s]   Add the installation prefix of "nav2_recoveries" to CMAKE_PREFIX_PATH or
+[7.279s]   set "nav2_recoveries_DIR" to a directory containing one of the above files.
+[7.279s]   If "nav2_recoveries" provides a separate development package or SDK, be
+[7.279s]   sure it has been installed.
+[7.279s] 
+[7.279s] [0m
+[7.279s] -- Configuring incomplete, errors occurred!
+[7.279s] See also "/home/hegel/Documents/GitHub/mod8-pon2/build/turtlebot3_nav_package/CMakeFiles/CMakeOutput.log".
+[7.295s] Invoked command in '/home/hegel/Documents/GitHub/mod8-pon2/build/turtlebot3_nav_package' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com _=/usr/bin/env /usr/bin/cmake /home/hegel/Documents/GitHub/mod8-pon2 -DCMAKE_INSTALL_PREFIX=/home/hegel/Documents/GitHub/mod8-pon2/install/turtlebot3_nav_package

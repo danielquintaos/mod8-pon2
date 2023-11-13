@@ -1,0 +1,26 @@
+[0.859s] Invoking command in '/home/hegel/Documents/GitHub/mod8-pon2/src/package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hegel/Documents/GitHub/mod8-pon2/build/package/prefix_override:/home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/package build --build-base /home/hegel/Documents/GitHub/mod8-pon2/build/package/build install --record /home/hegel/Documents/GitHub/mod8-pon2/build/package/install.log --single-version-externally-managed
+[1.128s] running egg_info
+[1.129s] writing ../../build/package/package.egg-info/PKG-INFO
+[1.129s] writing dependency_links to ../../build/package/package.egg-info/dependency_links.txt
+[1.130s] writing entry points to ../../build/package/package.egg-info/entry_points.txt
+[1.131s] writing requirements to ../../build/package/package.egg-info/requires.txt
+[1.131s] writing top-level names to ../../build/package/package.egg-info/top_level.txt
+[1.134s] reading manifest file '../../build/package/package.egg-info/SOURCES.txt'
+[1.134s] writing manifest file '../../build/package/package.egg-info/SOURCES.txt'
+[1.135s] running build
+[1.135s] running build_py
+[1.135s] copying package/move.py -> /home/hegel/Documents/GitHub/mod8-pon2/build/package/build/lib/package
+[1.135s] running install
+[1.136s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.136s]   warnings.warn(
+[1.136s] running install_lib
+[1.137s] copying /home/hegel/Documents/GitHub/mod8-pon2/build/package/build/lib/package/move.py -> /home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages/package
+[1.137s] byte-compiling /home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages/package/move.py to move.cpython-310.pyc
+[1.138s] running install_data
+[1.138s] running install_egg_info
+[1.140s] removing '/home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages/package-0.0.0-py3.10.egg-info' (and everything under it)
+[1.140s] Copying ../../build/package/package.egg-info to /home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages/package-0.0.0-py3.10.egg-info
+[1.144s] running install_scripts
+[1.168s] Installing move script to /home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/package
+[1.168s] writing list of installed files to '/home/hegel/Documents/GitHub/mod8-pon2/build/package/install.log'
+[1.208s] Invoked command in '/home/hegel/Documents/GitHub/mod8-pon2/src/package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/hegel/Documents/GitHub/mod8-pon2/build/package/prefix_override:/home/hegel/Documents/GitHub/mod8-pon2/install/package/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/package build --build-base /home/hegel/Documents/GitHub/mod8-pon2/build/package/build install --record /home/hegel/Documents/GitHub/mod8-pon2/build/package/install.log --single-version-externally-managed
