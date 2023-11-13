@@ -20,4 +20,5 @@ E então, a navegação - ros2 launch package navigation_launch.py. O move.py se
 ### O Epílogo: Um Vídeo Sem Audiência
 Finalmente, um vídeo captura a essência efêmera do move.py. Mas, como tudo nesse universo de obsolescência programada, ele permanece quase invisível, uma nota de rodapé na grande narrativa da existência.
 Parte 1: https://youtu.be/cKghJXiEIro?si=vmNZPGcBxQ4GZZPv
+
 Parte 2: https://youtu.be/QGx9DxFIclI?si=lA5iFcx9WpXC7XPq
