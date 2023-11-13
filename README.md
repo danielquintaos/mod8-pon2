@@ -1,99 +1,23 @@
-Este guia oferece um caminho simplificado para a criação, configuração e utilização de pacotes em ROS2, abrangendo desde a criação de um workspace até a execução de pacotes e launch files personalizados.
+# Mapeando a Insignificância: move.py e a Ilusão de Controle
 
-**1. Criação de um Workspace ROS**
-- **Início:** Crie uma pasta chamada `meu_workspace` e uma subpasta `src` dentro dela:
-  ```bash
-  mkdir -p meu_workspace/src
-  ```
-- **Adicionar Pacote:** Entre na pasta `src` e clone um pacote de exemplo:
-  ```bash
-  cd meu_workspace/src
-  git clone https://github.com/ros/ros_tutorials.git -b humble
-  ```
+Em um mundo onde a obsolescência de tudo é iminente, surge o move.py, um mero fragmento em um universo de códigos e máquinas. Este pacote ROS, envolto na ironia de mapear locais destinados ao esquecimento, promete navegar por um labirinto de coordenadas tão efêmeras quanto nossas próprias existências.
 
-**2. Instalação e Configuração de Dependências**
-- **Instalar rosdep:** Instale o `rosdep`, não incluso na instalação padrão do ROS:
-  ```bash
-  sudo apt install python3-rosdep
-  ```
-- **Configurar rosdep:** Inicialize e atualize o `rosdep`:
-  ```bash
-  sudo rosdep init
-  rosdep update
-  ```
-- **Resolver Dependências:** Volte para a raiz do workspace e instale as dependências:
-  ```bash
-  cd meu_workspace
-  rosdep install -i --from-path src --rosdistro humble -y
-  ```
+## A Instalação: Um Exercício de Futilidade
+A jornada começa com a instalação do pacote package, um esforço quase lúdico para dar sentido ao move.py. Ubuntu, ROS, Nav2 - nomes que soam como cânticos de um ritual tecnológico. Clonar o Github, baixar dependências - atos que imitam a criação, mas revelam apenas nossa dependência da máquina.
 
-**3. Compilação do Pacote**
-- **Build do Pacote:** Use `colcon build` para compilar o pacote. Ignore avisos sobre o `setuptools`, ou instale uma versão específica se necessário:
-  ```bash
-  colcon build
-  # Em caso de problemas com setuptools
-  pip install setuptools==58.2.0
-  ```
-- **Source no Setup Script:** Para executar o pacote, ative o script de configuração do workspace:
-  ```bash
-  source install/local_setup.bash # ou setup.zsh para zsh
-  ```
+### O Processo: Eco de uma Era Vazia
+Comandos são digitados, dependências são instaladas - sudo apt install python3-rosdep, sudo rosdep init, rosdep update, pip install setuptools==58.2.0. E então, o grande ato de clonagem: git clone https://github.com/danielquintaos/mod8-pon2. Seguido pelo rosdep install -i --from-path src --rosdistro humble -y. Uma sequência de ações tão vazias quanto as promessas que carregam.
 
-**4. Criando seu Próprio Pacote ROS**
-- **Criação de Pacote Pré-preenchido:**
-  ```bash
-  ros2 pkg create --build-type ament_python --node-name my_node my_package
-  ```
-  Depois do build, ative o script de setup:
-  ```bash
-  source install/local_setup.bash # ou setup.zsh para zsh
-  ```
-  Execute o pacote:
-  ```bash
-  ros2 run my_package my_node
-  ```
+### Compilação: A Ilusão de Progresso
+Compilar o pacote, ajustar variáveis - colcon build --packages-select package, source install/local_setup.bash. Atos que prometem preparar o move.py para um mundo que não espera por ele.
 
-- **Criação de Pacote Vazio:**
-  - Crie um pacote chamado `ola_mundo` e um script `ola.py`:
-    ```bash
-    ros2 pkg create --build-type ament_python ola_mundo
-    cd ola_mundo/ola_mundo
-    touch ola.py
-    ```
-  - Preencha `ola.py` com um script simples e configure os arquivos `package.xml` e `setup.py` com informações do pacote e dependências.
-  - Após configurar, retorne à raiz do workspace, compile e execute o pacote:
-    ```bash
-    colcon build
-    source install/local_setup.bash # ou setup.zsh para zsh
-    ros2 run ola_mundo ola
-    ```
+## move.py em Ação: Uma Dança com Máquinas
+O move.py desperta, dividido em duas etapas: mapeamento e navegação. Primeiro, ele mapeia um mundo que não se importa com sua presença, utilizando ros2 launch package mapping_launch.py. Os comandos atuam como um sopro de vida em um universo estéril - turtlebot3_cartographer, turtlebot3_gazebo, turtlebot3_teleop. Um ballet tecnológico onde o robô, movido pela ilusão de controle, dança até que o mapa se complete.
 
-**5. Criação e Integração de Launch Files**
-- **Criação de Launch Files:** Crie um arquivo de launch `test_launch.py` no diretório `launch` do seu pacote. Exemplo de conteúdo para `test_launch.py`:
-  ```python
-  from launch import LaunchDescription
-  from launch_ros.actions import Node
+### Navegação: Perambulando pelo Vazio
+E então, a navegação - ros2 launch package navigation_launch.py. O move.py se aventura por um mapa que é apenas um reflexo distorcido da realidade. turtlebot3_navigation2, turtlebot3_gazebo, move.py - nomes que ecoam na vastidão de um mundo que não reconhece seu esforço.
 
-  def generate_launch_description():
-      return LaunchDescription([
-          Node(
-              package='turtlesim',
-              executable='turtlesim_node',
-              name='sim',
-              output='screen'
-          ),
-          Node(
-              package='turtlesim',
-              executable='turtle_teleop_key',
-              name='teleop',
-              prefix = 'gnome-terminal --',
-              output='screen'
-          )
-      ])
-  ```
-- **Integração com Pacote:** Modifique o `setup.py` do seu pacote para incluir a pasta `launch` e seus arquivos no build. Depois, compile novamente o pacote e execute o launch file com:
-  ```bash
-  colcon build
-  ros2 launch my_package test_launch.py
-  ```
-
+### O Epílogo: Um Vídeo Sem Audiência
+Finalmente, um vídeo captura a essência efêmera do move.py. Mas, como tudo nesse universo de obsolescência programada, ele permanece quase invisível, uma nota de rodapé na grande narrativa da existência.
+Parte 1: https://youtu.be/cKghJXiEIro?si=vmNZPGcBxQ4GZZPv
+Parte 2: https://youtu.be/QGx9DxFIclI?si=lA5iFcx9WpXC7XPq

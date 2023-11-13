@@ -22,10 +22,11 @@ def create_pose_stamped(navigator, pos_x, pos_y, pos_z=0.0):
 def main():
     rclpy.init()
     nav = BasicNavigator()
+    nav.waitUntilNav2Active()
+    #nav.waitUntilNav2Active(navigator="amcl_pose", localizer="package")
     nav.setInitialPose(create_pose_stamped(nav, 0.0, 0.0))
-    nav.waitUntilNav2Active(navigator="amcl_pose", localizer="package")
-    goal_pose1 = create_pose_stamped(nav, 2.5, 1.0)
-    goal_pose2 = create_pose_stamped(nav, 0.0, 1.0)
+    goal_pose1 = create_pose_stamped(nav, 2.0, 0.0)
+    goal_pose2 = create_pose_stamped(nav, 2.5, 1.0)
     goal_pose3 = create_pose_stamped(nav, 0.0, 0.0)
 
     waypoints = [goal_pose1, goal_pose2, goal_pose3]
